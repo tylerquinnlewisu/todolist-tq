@@ -4,7 +4,22 @@
 
 body{
     background-size: cover;
-    height: 100vh; 
+    background-repeat: no-repeat;
+}
+
+@media (max-width: 1150px){
+    body{
+        
+        background-size: 315%; 
+        background-repeat: repeat-y;
+    }
+}
+
+@media (max-width: 800px){
+    body{
+        background-size: 265%; 
+        background-repeat: repeat-y;
+    }
 }
 
 #todolistlogo{
@@ -18,3 +33,4 @@ body{
     font-weight: bold;
     font-size: larger;
 }
+

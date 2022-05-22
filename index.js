@@ -8,13 +8,18 @@ descriptionInputField = document.getElementById("description");
 
 taskListContainer = document.getElementById('tasklist-container');
 
+instructionsContainer = document.getElementById('instructions-container');
+
+
 mySubmissionBtn.addEventListener('click', function(){
 
     if (taskTitleInputField.value != "") {
 
-        /* Make TaskList container visivle */ 
+        /* Make TaskList container visible and instructionsContainer invisible */ 
 
         taskListContainer.classList.remove("invisible");
+        
+        instructionsContainer.classList.add("invisible"); 
         
 
 
